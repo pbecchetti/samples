@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Centiva Test</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row" >
+        <div class="stat-geo">
+            <div class="row" >
+            <div class="col-sm-6" id="geoDivLeft">
+                <div class="row stats" id="nbVisit">
+                    <div class="col-sm-8 textGeoLeft">
+                        <p>number of pagesviews<br>
+                            <span class="smallgeo">on the property page</span>
+                    </div>	
+                    <div class="col-sm-4 textGeoRight">
+                            <div class="circle-geo">29250</div>
+                    </div>	
+                </div>
+                <div class="row stats" id="avgAge">
+                    <div class="col-sm-8 textGeoLeft">
+                                <p>average age<br>
+                                <span class="smallgeo">of your potential</span>
+                    </div>	
+                    <div class="col-sm-4 textGeoRight">
+                                 <div class="circle-geo">356</div>
+                    </div>	
+                </div>
+                <div class="row stats" id="avgTime">
+                    <div class="col-sm-8 textGeoLeft">
+                                <p>average duration<br>
+                                <span class="smallgeo">per visit</span>
+                    </div>	
+                    <div class="col-sm-4 textGeoRight">
+                                <div class="circle-geo">00:40</div>
+                    </div>	
+                </div>
+            </div>
+            <div class="col-sm-6" id="geoDivRight">
+                <div class="row">
+                    <div class="col-sm-12 text-center titleGeo">
+                    <h3>geographical distribution</h3>
+                    <span class="smallgeo">of people interested in this property</span>
+                    </div>
+                </div>
+                <hr class="hrGeo">
+                    <div class="row">
+                    <div class="col-sm-6 geoLeft">
+                        Montreal
+                    </div>
+                    <div class="col-sm-6 geoRight">
+                        47%
+                    </div>
+                </div>
+                <hr class="hrGeo">
+                    <div class="row">
+                    <div class="col-sm-6 geoLeft">
+                        Quebec
+                    </div>
+                    <div class="col-sm-6 geoRight">
+                        28%
+                    </div>
+                </div>
+                <hr class="hrGeo">
+                    <div class="row">
+                    <div class="col-sm-6 geoLeft">
+                        Laval
+                    </div>
+                    <div class="col-sm-6 geoRight">
+                        15%
+                    </div>
+                </div>
+                <hr class="hrGeo">
+                    <div class="row">
+                    <div class="col-sm-6 geoLeft">
+                        rest of Quebec
+                    </div>
+                    <div class="col-sm-6 geoRight">
+                        10%
+                    </div>
+                </div>
+                 <hr class="hrGeo">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row refSection text-center">
+        <div class="col-sm-8 referralsSection">
+            <div id="titleRef"><h3>visitors referrals</h3></div>
+            <div class="row ">
+                <div class="col-sm-6 pieChart">
+					<canvas id="doughnut-chart" class="chartReferral" width="800" height="600"></canvas>
+                </div>
+                <div class="col-sm-6 referText">
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-9 text-left refName">
+                            <span class="dot" id="dot-1"></span>
+                            RE/Max QC(direct)
+                        </div>
+                        <div class="col-sm-3 text-right refNb">
+                            34%
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-9 text-left refName">
+                            <span class="dot" id="dot-2"></span>
+                            Search Engine
+                        </div>
+                        <div class="col-sm-3 text-right refNb">
+                            28%
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-9 text-left refName">
+                            <span class="dot" id="dot-3"></span>
+                            Social Networks
+                        </div>
+
+                        <div class="col-sm-3 text-right refNb">
+                            22%
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-9 text-left refName">
+                            <span class="dot" id="dot-4"></span>
+                            others referrers
+                        </div>
+                        <div class="col-sm-3 text-right refNb">
+                            16%
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 referrersSection">
+        	<a data-toggle="collapse" href="#contentHelp" role="button" aria-expanded="false" id="btnHelp"></a>
+			<div class="collapse" id="contentHelp">
+				<div id="titleContentHelp">Qu'est-ce qu'un site web référent?<a data-toggle="collapse" href="#contentHelp" role="button" aria-expanded="false" id="btnClose">X</a></div>
+				<div id="textContentHelp">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis enim varius, pellentesque nibh eget, imperdiet ante. Donec varius dui in nisl porta porta. Sed at nisl orci. Morbi ut orci mauris. Nunc dignissim lorem sed lorem placerat lobortis. Maecenas libero tortor, pharetra at nunc nec.
+				</div>
+			</div>
+            <div id="titleRef"><h3>referrers</h3></div>
+            <hr class="hrRefRight">
+            <div class="row">
+                <div class="col-sm-6 refLeft refNb">
+                    732
+                </div>
+                <div class="col-sm-6 refRight refName">
+                    Facebook
+                </div>
+            </div>
+            <hr class="hrRefRight">
+            <div class="row">
+                <div class="col-sm-6 refLeft refNb">
+                    280
+                </div>
+                <div class="col-sm-6 refRight refName">
+                    Kijiji
+                </div>
+            </div>
+            <hr class="hrRefRight">
+            <div class="row">
+                <div class="col-sm-6 refLeft refNb">
+                    123
+                </div>
+                <div class="col-sm-6 refRight refName">
+                    Centris
+                </div>
+            </div>
+            <hr class="hrRefRight">
+            <div class="row">
+                <div class="col-sm-6 refLeft refNb">
+                    190
+                </div>
+                <div class="col-sm-6 refRight refName">
+                    Remax QC
+                </div>
+            </div>
+            <hr class="hrRefRight">
+            <div class="row">
+                <div class="col-sm-6 refLeft refNb">
+                    134
+                </div>
+                <div class="col-sm-6 refRight refName">
+                    Others
+                </div>
+            </div>
+            <hr class="hrRefRight">
+        </div>
+    </div>
+    <div class="row text-center trendDiv">
+        <div class="col-sm-12">
+            <div class="visitTrendSection">
+                <h3>Visits Trend</h3>
+                <div class="chart-container">
+                    <canvas id="visitChart" class="chartTrends"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <div class="deviceTypeSection">
+            <h3>Device Type Usage</h3>
+            <div class="row">
+                <div class="col-sm-4 circleDevice">
+                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="imagedesktop" x="37%" y="37%" height="100%" width="100%"
+                                     viewBox="0 0 512 512">
+                                <image x="0%" y="0%" width="128" height="128" xlink:href="img/DESKTOP_ICON.png"></image>
+                            </pattern>
+                        </defs>
+                        <circle class="circle-chart__background" stroke="#00397C" stroke-width="0.5"
+                                fill="url(#imagedesktop)" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <circle class="circle-chart__circle" stroke="#007dc3" stroke-width="2" stroke-dasharray="76,100"
+                                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <g class="circle-chart__info">
+                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                                  text-anchor="middle" font-size="8">
+                            </text>
+                        </g>
+                    </svg>
+                    <br> <span class="percentDevice">76%</span> &nbsp; Desktop
+                </div>
+                <div class="col-sm-4 circleDevice">
+                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="imagetablet" x="37%" y="37%" height="100%" width="100%"
+                                     viewBox="0 0 512 512">
+                                <image x="0%" y="0%" width="128" height="128" xlink:href="img/TABLET_ICON.png"></image>
+                            </pattern>
+                        </defs>
+                        <circle class="circle-chart__background" stroke="#00397C" stroke-width="0.5"
+                                fill="url(#imagetablet)" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <circle class="circle-chart__circle" stroke="#007dc3" stroke-width="2" stroke-dasharray="16,100"
+                                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <g class="circle-chart__info">
+                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                                  text-anchor="middle" font-size="8">
+                            </text>
+                        </g>
+                    </svg>
+                    <br> <span class="percentDevice">16%</span> &nbsp; tablet
+                </div>
+                <div class="col-sm-4 circleDevice">
+                    <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="imagephone" x="37%" y="37%" height="100%" width="100%"
+                                     viewBox="0 0 512 512">
+                                <image x="0%" y="0%" width="128" height="128" xlink:href="img/PHONE_ICON.png"></image>
+                            </pattern>
+                        </defs>
+                        <circle class="circle-chart__background" stroke="#00397C" stroke-width="0.5"
+                                fill="url(#imagephone)" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <circle class="circle-chart__circle" stroke="#007dc3" stroke-width="2" stroke-dasharray="8,100"
+                                stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                        <g class="circle-chart__info">
+                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                                  text-anchor="middle" font-size="8">
+                            </text>
+                        </g>
+                    </svg>
+                    <br> <span class="percentDevice">8%</span> &nbsp; Mobile
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 btnmarginoutleft">
+            <button type="submit" class="btn btn-default btn-block btnFoot"><img src="img/SHARE_ICON_02.png"> &nbsp;
+                Partager
+            </button>
+        </div>
+        <div class="col-sm-3 btnmarginin">
+            <button type="submit" class="btn btn-default btn-block btnFoot"><img src="img/PRINT_ICON.png"> &nbsp;
+                Imprimer
+            </button>
+        </div>
+        <div class="col-sm-3 btnmarginin">
+            <button type="submit" class="btn btn-default btn-block btnFoot"><img src="img/DOWNLOAD_ICON.png"> &nbsp;
+                Sauvegarder
+            </button>
+        </div>
+        <div class="col-sm-3 btnmarginoutright">
+            <button type="submit" class="btn btn-default btn-block btnFoot"><img src="img/EMAIL_ICON copy.png"> &nbsp;
+                Rester à l'affut
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="footer ">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 text-left footerTxt">© 2018 RE/MAX CENTIVA INC. - ALL RIGHTS RESERVED
+            </div>
+            <div class="col-sm-6 text-right footerTxt">Powered By &nbsp; <img class="logo" src="img/Centiva_W.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ///////////////////////////////// -->
+<!-- JAVASCRIPT SECTION -->
+<!-- ///////////////////////////////// -->
+
+<!-- Boostrap  -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+
+<script>    
+// Scrolling to Visit trends chart line
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 800  && y < 850) {
+        var visitChart = new Chart(document.getElementById("visitChart").getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                datasets: [{
+                    data: [190, 310, 500, 120, 210, 300, 600, 543, 600, 234, 650],
+                    borderColor: "#3e95cd",
+                    fill: false,
+                    label: "",
+                }
+                ]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                elements: {point: {radius: 0}},
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            drawBorder: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'DATE'
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            drawBorder: false,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'NUMBER OF VISITS'
+                        }
+                    }]
+                }
+            }
+        });
+  } 
+  // Scrolling to Device used circle filled
+  if (y > 1100  && y < 1120) {
+    $(".circle-chart").css("display","block");
+  }
+});
+
+// when scrolling to visitor referrals pie chart div
+$(window).bind("scroll", function(){  
+    $('.chartReferral').each(function(j){ 
+    setTimeout(function() {
+        new Chart(document.getElementById("doughnut-chart"), {
+        type: 'doughnut',
+        data: {
+          datasets: [
+            {
+              backgroundColor: ["#a4d7f4", "#65acd4","#003da5","#fff"],
+              data: [34,28,22,16],
+            }
+          ]
+        },
+        options: {
+              cutoutPercentage: 90
+        }
+        });
+    }, 700 );
+    $(window).unbind(j);
+    });
+});
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,354 @@
+body, html,.container {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ebebeb;
+    font-family: 'Gotham';
+}
+body, html{
+    background-color: #f2f2f2 !important;
+}
+.container {
+    max-width: 1640px !important;
+}
+h3{
+    font-family: 'Gotham-Book' !important;
+}
+
+/*geographical Section*/
+
+.stat-geo{
+    background-image: -moz-linear-gradient( -35deg, rgb(0,78,155) 24%, rgb(0,52,113) 100%);
+    background-image: -webkit-linear-gradient( -35deg, rgb(0,78,155) 24%, rgb(0,52,113) 100%);
+    background-image: -ms-linear-gradient( -35deg, rgb(0,78,155) 24%, rgb(0,52,113) 100%);
+    height: 645px;
+    width: 100%;
+}
+.circle-geo {
+    display: table-cell;
+    height: 135px; 
+    width: 135px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+#geoDivRight{
+    padding: 70px;
+    padding-top: 75px;
+    font-size: 20px;
+    background: transparent url('img/Quebec_ICON.png') no-repeat;
+    background-position: -100px;
+}
+#geoDivLeft{
+    padding-left: 30px;
+}
+.textGeoLeft{
+    padding-left: 40px !important;
+    padding-top: 85px;
+}
+.textGeoRight{
+   padding-top: 20px;
+}
+.smallgeo{
+    font-size: 17px;
+    font-family: 'Gotham-Light';
+}
+.titleGeo{
+    padding-bottom: 40px;
+    color: white;
+}
+.hrGeo{
+    border: 0;
+    height: 1px;
+    background: #ededed;
+    opacity: 0.5;
+}
+.geoRight{
+    text-align: right;
+}
+.stats{
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4;
+    height: 215px;
+
+}
+#nbVisit{
+    background-color: #004b97;
+}
+#avgAge{
+    background-color: #004288;
+}
+#avgTime{
+    background-color: #003e80;
+
+}
+
+/*Referral Section*/
+.referralsSection {
+    background-color: rgb(248, 248, 248);
+    padding-top: 60px;
+    padding-right: 30px !important;
+    color: #5f6062;
+    padding-bottom: 60px;
+}
+.referText{
+    padding-top: 30px;
+}
+.pieChart{
+    margin-top:30px;
+    margin: 0 auto;
+}
+#doughnut-chart{
+    background: transparent url('img/STATS_ICON.png') no-repeat center center;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 8px #ddd;
+    -moz-box-shadow: 0 0 8px #ddd;
+    box-shadow: 0 0 8px #ddd;
+}
+#dot-1 {
+    background-color: #a4d7f4;
+}
+#dot-2 {
+    background-color: #65acd4;
+}
+#dot-3 {
+    background-color: #003da5;
+}
+#dot-4 {
+    background-color: #fff;
+}
+.refNb {
+    font-size: 30px;
+}
+.refName {
+    padding-top: 7px;
+}
+.referrersSection {
+      background: #d13531 url('img/BG_BACKLINK.png') no-repeat bottom right;
+      color: #fff;
+      padding: 60px 30px !important;
+  }
+.trendDiv{
+    background-color: #fff;
+}
+#contentHelp{
+    position:absolute; 
+    top:10px; 
+    right:10px;
+    left:10px;
+    text-transform: lowercase;
+    font-size: 16px;
+    background-color: #fff;
+    color: #5f6062;
+    text-align: left;
+    z-index: 1000;
+}
+#titleContentHelp{
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+#textContentHelp{
+    padding: 0 15px 25px 15px;
+}
+#btnHelp {
+    -webkit-box-shadow: 0px -1px 11px 0px #878787;
+    box-shadow: 0px -1px 11px 0px #878787;
+    background-color:#dc1c2f;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #dc1c2f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding:3px 9px;
+    text-decoration:none;
+    position:absolute; 
+    top:20px; 
+    right:20px;
+}
+#btnClose {
+    -webkit-box-shadow: 0px -1px 11px 0px #878787;
+    box-shadow: 0px -1px 11px 0px #878787;
+    background-color:#dc1c2f;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #dc1c2f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding:3px 9px;
+    text-decoration:none;
+    position:absolute;  
+    right: 8px;
+    top:10px; 
+}
+#titleRef {
+    margin-bottom: 70px;
+}
+.hrRefRight {
+    border: solid 1px;
+    background: #fff;
+    opacity: 0.5;
+}
+.refRight {
+    text-align: right;
+}
+.refLeft {
+    text-align: left;
+    font-family: 'Gotham-Book';;
+}
+
+/*Trend Section*/
+.visitTrendSection {
+    padding-top: 60px;
+    width: 100%;
+    padding: 20px;
+}
+.chart-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Device Section*/
+.deviceTypeSection {
+    padding-top: 60px;
+    margin: auto;
+    width: 100%;
+    color: #fff;
+    background: #004a95 url('img/BG_MULTIDEVICES.png') no-repeat right bottom;
+    background-size: 549px;
+}
+.circleDevice {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.percentDevice {
+    font-size: 30px;
+    font-family: 'Gotham-Book';;
+}
+.circle-chart {
+    margin-bottom: 20px;
+    display: none;
+    margin: auto;
+}
+
+/*Btns Section*/
+.btnFoot {
+    border: 1px solid #ebebeb !important;
+    border-radius: 0px !important;
+    padding: 35px !important;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ebebeb !important;
+
+}
+.btnmarginoutleft {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.btnmarginoutright {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.btnmarginin {
+    padding: 0 !important;
+}
+
+/*Footer*/
+.btnFoot:hover {
+    border-bottom: 3px solid #a51220 !important;
+}
+.footer {
+    background-color: #ededed;
+    width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-top: -3px;
+    padding: 50px;
+}
+.footerTxt {
+    color: #5f6062;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    font-size: 16px;
+}
+.logo {
+    margin-bottom: 4px;
+}
+
+
+/*Circle animation*/
+.circle-chart__circle {
+    animation: circle-chart-fill 2s reverse; /* 1 */
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+}
+
+.circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+    to {
+        stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes circle-chart-appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    font-family: sans-serif;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 31em) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*FONTS*/
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('fonts/Gotham Book.otf');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham Medium.otf');
+}
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham Light.otf');
+}
