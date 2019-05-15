@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pauline's sample Jobs</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+	<title>Pauline's sample</title>
+	<meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="app">
+		<div id="header">Check out our jobs!</div>
+    
+    <div class="section" id="allOpportunities">
+      <h4>All opportunities</h4>
+    </div>
+    
+    <div  class="section" id="searchDiv">
+    <h4>Search a job in a particular area</h4>
+    <select id="state" onchange="changeState()">
+      <option value="ALL" selected="selected">N/A</option> 
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="NY">New York</option>
+    </select>
+  </div>
+    
+    <div  class="section" id="stateOpportunities">
+    </div>
+        
+    <div class="section" id="cityOpportunities">
+      <button type="button" class="btn btn-warning" id="btnCities" onclick=displayByCity()>Display all the jobs by cities</button>
+      <div id="listCities">
+        <h4>Opportunities by Cities</h4>
+      </div>
+    </div>
+   
+</div>
+
+	<script src="src/index.js">
+</script>
+</body>
+ 
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
