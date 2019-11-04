@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>more-other-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18"></rect>
+        <path d="M3.26315391,0.82291398 C4.17588301,-0.08981512 5.65865677,-0.08686762 6.5684384,0.82291398 L8.7713559,3.0258315 C9.684085,3.9385606 9.367699,4.6784738 8.0877022,4.6784738 L1.74389008,4.6784738 C0.45358946,4.6784738 0.15045477,3.9356131 1.06023636,3.0258315 L3.26315391,0.82291398 Z" id="path-3"></path>
+        <path d="M3.26315391,0.82291398 C4.17588301,-0.08981512 5.65865677,-0.08686762 6.5684384,0.82291398 L8.7713559,3.0258315 C9.684085,3.9385606 9.367699,4.6784738 8.0877022,4.6784738 L1.74389008,4.6784738 C0.45358946,4.6784738 0.15045477,3.9356131 1.06023636,3.0258315 L3.26315391,0.82291398 Z" id="path-5"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="more-other-hover">
+            <g id="Rectangle-95-Copy-27" opacity="0.01">
+                <g id="path-1-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-1"></g>
+                    <rect id="path-1" stroke="#FFFFFF" mask="url(#mask-2)" x="0" y="0" width="18" height="18"></rect>
+                </g>
+            </g>
+            <g id="more" transform="translate(9.000000, 9.178474) scale(-1, 1) rotate(-180.000000) translate(-9.000000, -9.178474) translate(4.000000, 6.678474)">
+                <g id="path-3-Clipped">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <g id="path-3" mask="url(#mask-4)" fill-rule="nonzero">
+                        <use fill="#9BADE3" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <path stroke="#30488F" stroke-width="1" d="M3.6167073,1.17646737 C4.33306002,0.460114656 5.49925017,0.460832555 6.21488502,1.17646738 L8.41780251,3.37938489 C9.01232167,3.97390405 8.92681567,4.1784738 8.0877022,4.1784738 L1.74389008,4.1784738 C0.901094519,4.1784738 0.817538751,3.9756359 1.41378975,3.37938489 L3.6167073,1.17646737 L3.6167073,1.17646737 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

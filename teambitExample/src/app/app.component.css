@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Harmonia';
+    src: url(/assets/HarmoniaSansProCyr-Regular/HarmoniaSansProCyr-Regular.ttf) format("truetype");
+    font-weight: 300;
+}
+
+* {
+    font-family: 'Harmonia', Helvetica, Arial;
+    color: #58402c;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.spacer {
+    flex: 1;
+}
+
+mat-toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    background: white;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.sticky {
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .08);
+    position: fixed;
+    top: 0;
+}
+
+.imgLogo {
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.moreSol {
+    background: url("/assets/img/more-other.svg") no-repeat;
+    display: inline;
+    height: 15px;
+    width: 15px;
+    background-position: center;
+    margin-left: -7px;
+    margin-right: 10px;
+}
+
+.dropdownSolution:hover+.moreSol {
+    background: url("/assets/img/more-other-hover.svg") no-repeat;
+    background-position: center;
+}
+
+#menuCollapsed {
+    display: none;
+}
+
+#menu {
+    display: block;
+    font-size: .875rem;
+}
+
+.menuRight {
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.menuRight:hover {
+    color: #30488f
+}
+
+.dropdownSolution {
+    padding-right: 0px;
+}
+
+.dropdownSolution:hover {}
+
+.menuBottom {
+    width: 95%;
+    margin: auto;
+}
+
+.footer {
+    padding: 50px;
+    font-size: 1.125rem !important;
+}
+
+.footerLinks {
+    padding-left: 50px;
+}
+
+.imgLogoFooter {
+    width: 40px;
+}
+
+.leftFooter {
+    float: left;
+    /* padding-right: 30px; */
+    width: 50%;
+}
+
+.rightFooter {
+    /* width: 45%; */
+}
+
+.SubFooter {
+    font-size: .875rem;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+    #menuCollapsed {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}

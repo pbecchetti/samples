@@ -1,0 +1,88 @@
+<div class="content" role="main" (scroll)="onWindowScroll($event);">
+    <mat-toolbar id="navbar">
+        <span><img class="imgLogo" src="./assets/img/logo-small.svg "></span> &nbsp;
+        <span style="font-size: 20px; ">Teambit</span>
+        <span class="fill-remaining-space "></span>
+
+        <div id="menu ">
+            <span class="menuRight dropdownSolution" [matMenuTriggerFor]="menu">Solutions</span>
+            <span class="menuRight moreSol"></span>
+            <span class="menuRight ">Pricing</span>
+            <span class="menuRight ">Blog</span>
+            <span class="menuRight ">Sign in</span>
+            <span class="menuRight ">Sign up</span>
+        </div>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Feedback</button>
+            <button mat-menu-item>Surveys</button>
+            <button mat-menu-item>Reviews</button>
+        </mat-menu>
+
+
+    </mat-toolbar>
+    <hr class="menuBottom ">
+
+    <app-homepage></app-homepage>
+
+    <div class="footer ">
+        <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+            <div fxFlex="30% ">
+                <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                    <div fxFlex="20% ">
+                        <img class="imgLogoFooter " src="./assets/img/logo-small.svg ">
+                    </div>
+                    <div fxFlex="80% ">
+                        Teambit helps teams create high performing cultures by making feedback a daily habit.
+                    </div>
+                </div>
+            </div>
+            <div fxFlex="70% " class="footerLinks ">
+                <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                    <div fxFlex="33% " class="footerColumn ">
+                        <div class="leftFooter ">
+                            Product<br><br>
+                            <p class="SubFooter ">
+                                Feedback<br> <br>Survey
+                                <br> <br>Reviews
+                            </p>
+                        </div>
+                        <div class="rightFooter ">About <br><br>
+                            <p class="SubFooter ">
+                                About<br> <br>Terms
+                                <br><br> Help Center
+                            </p>
+                        </div>
+                    </div>
+                    <div fxFlex="33% " class="footerColumn ">
+                        <div class="leftFooter ">
+                            Connect<br><br>
+                            <p class="SubFooter ">
+                                Contact Us<br> <br>Twitter
+                                <br> <br>Facebook
+                            </p>
+                        </div>
+                        <div class="rightFooter ">Labs <br><br>
+                            <p class="SubFooter ">
+                                Manager<br> <br>Checklist
+                                <br><br> Help Center
+                            </p>
+                        </div>
+                    </div>
+                    <div fxFlex="33% " class="footerColumn ">
+                        <div class="leftFooter ">
+                            From the blog<br><br>
+                            <p class="SubFooter ">
+                                How to change your company culture<br> <br>How teams can be more productive
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<router-outlet></router-outlet>

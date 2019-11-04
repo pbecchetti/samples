@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>AEBB67FC-F155-400C-A2BB-A90DA6B1BCB2</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M7.26315391,7.82291398 C8.17588301,6.91018488 9.65865677,6.91313238 10.5684384,7.82291398 L12.7713559,10.0258315 C13.684085,10.9385606 13.367699,11.6784738 12.0877022,11.6784738 L5.74389008,11.6784738 C4.45358946,11.6784738 4.15045477,10.9356131 5.06023636,10.0258315 L7.26315391,7.82291398 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="9.08466382" height="4.67847376" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-46.000000, -600.000000)" id="more-other" stroke-width="2">
+            <g transform="translate(46.000000, 600.000000)">
+                <use id="Rectangle-95-Copy-27" stroke="#FFFFFF" mask="url(#mask-2)" opacity="0.01" xlink:href="#path-1"></use>
+                <use id="more" stroke="#58402C" mask="url(#mask-4)" fill="#B49982" transform="translate(8.913936, 9.339237) scale(1, -1) translate(-8.913936, -9.339237) " xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>
