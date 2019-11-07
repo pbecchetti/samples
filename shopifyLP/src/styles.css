@@ -7,3 +7,15 @@ body {
     background-size: 2400px;
     line-height: 1.7;
 }
+
+@media screen and (max-width: 900px) {
+    body {
+        background-size: 1600px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-size: 1900px;
+    }
+}
