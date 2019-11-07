@@ -74,7 +74,7 @@ p {
 .smallText {
     color: white;
     padding-top: 30px;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     margin: auto;
 }
@@ -179,17 +179,29 @@ p {
 
 @media screen and (max-width: 900px) {
     .titleTop {
-        font-size: 40px;
+        font-size: 30px;
     }
     .textTop {
-        font-size: 25px;
+        font-size: 18px;
+    }
+    .section1 {
+        padding: 20px;
     }
     .mainPic {
-        width: 90%;
+        width: 95%;
         margin-top: 20px;
     }
+    .titleSection2 {
+        font-size: 16px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+    }
+    .textSection2 {
+        font-size: 12px;
+    }
     .section4 {
-        font-size: 25px;
+        font-size: 18px;
+        padding: 30px;
     }
     .author {
         font-size: 14px;
@@ -201,5 +213,13 @@ p {
     .footerTxt {
         float: none;
         padding: 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button-signup {
+        margin-top: 20px;
+        margin-left: 0;
     }
 }
