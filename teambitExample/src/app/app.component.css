@@ -70,9 +70,13 @@ mat-toolbar {
     display: none;
 }
 
-#menu {
+#menuMain {
     display: block;
     font-size: .875rem;
+}
+
+#menuCollapsed {
+    display: none;
 }
 
 .menuRight {
@@ -114,6 +118,10 @@ mat-toolbar {
     width: 50%;
 }
 
+.footerColumn {
+    padding-bottom: 20px;
+}
+
 .rightFooter {
     /* width: 45%; */
 }
@@ -129,7 +137,22 @@ mat-toolbar {
     #menuCollapsed {
         display: block;
     }
+    #menuMain {
+        display: none;
+    }
+    .footerTxt {
+        padding-bottom: 20px;
+    }
+    .footerColumn {
+        padding-bottom: 35px;
+    }
     #menu {
         display: none;
+    }
+    #menuCollapsed {
+        display: inline;
+    }
+    .material-icons {
+        font-family: 'Material Icons' !important;
     }
 }

@@ -4,7 +4,7 @@
         <span style="font-size: 20px; ">Teambit</span>
         <span class="fill-remaining-space "></span>
 
-        <div id="menu ">
+        <div id="menuMain">
             <span class="menuRight dropdownSolution" [matMenuTriggerFor]="menu">Solutions</span>
             <span class="menuRight moreSol"></span>
             <span class="menuRight ">Pricing</span>
@@ -17,6 +17,33 @@
             <button mat-menu-item>Surveys</button>
             <button mat-menu-item>Reviews</button>
         </mat-menu>
+        <div id="menuCollapsed">
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>menu</mat-icon> </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                          <span>Feedback</span>
+                        </button>
+                <button mat-menu-item disabled>
+                          <span>Surveys</span>
+                        </button>
+                <button mat-menu-item>
+                          <span>Reviews</span>
+                        </button>
+                <button mat-menu-item>
+                                <span>Praise</span>
+                              </button>
+                <button mat-menu-item>
+                                    <span>Pricing</span>
+                                  </button>
+                <button mat-menu-item>
+                                        <span>Blog</span>
+                                      </button>
+                <button mat-menu-item>
+                                            <span>Sign in</span>
+                                          </button>
+            </mat-menu>
+        </div>
 
 
     </mat-toolbar>
@@ -26,7 +53,7 @@
 
     <div class="footer ">
         <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
-            <div fxFlex="30% ">
+            <div class="footerTxt" fxFlex="30% ">
                 <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center " style="padding-bottom: 20px;">
                     <div fxFlex="20% ">
                         <img class="imgLogoFooter " src="./assets/img/logo-small.svg ">
@@ -38,7 +65,7 @@
             </div>
             <div fxFlex="70% " class="footerLinks ">
                 <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
-                    <div fxFlex="33% " class="footerColumn " style="padding-bottom: 20px;">
+                    <div fxFlex="33% " class="footerColumn ">
                         <div class="leftFooter ">
                             Product<br><br>
                             <p class="SubFooter ">

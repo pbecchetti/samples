@@ -140,6 +140,12 @@
     /* Responsive Styles */
     
     @media screen and (max-width: 959px) {
+        h1.title1 {
+            font-size: 30px;
+        }
+        p.title2 {
+            font-size: 1em;
+        }
         .section1>.left {
             text-align: center;
             max-width: 628px;
@@ -159,5 +165,14 @@
         }
         .ImgSection3 {
             margin: auto;
+        }
+        .imgMain,
+        .TextSection3 {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        h2 {
+            padding: 0;
         }
     }
