@@ -1,0 +1,599 @@
+* {
+    font-family: sans-serif, Helvetica, Arial;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
+.spacer {
+    flex: 1;
+}
+
+mat-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    background-color: rgb(22, 82, 240);
+    font-weight: bold;
+}
+
+.menuLink {
+    padding-right: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menuLink:hover {
+    opacity: 0.8;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.imgLogo {
+    width: 150px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.button-up {
+    background: rgb(5, 177, 105);
+    border-radius: 7px;
+    border: 00px solid rgb(5, 177, 105);
+    padding: 6px 10px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+.button-startHeader {
+    background: transparent;
+    border-radius: 7px;
+    border: 1px solid white;
+    padding: 13px 10px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.button-startHeader:hover {
+    background: white;
+    color: rgb(38, 53, 67);
+}
+
+.sticky .button-startHeader {
+    color: white;
+    background: rgb(5, 177, 105);
+    border-radius: 7px;
+    border: 00px solid rgb(5, 177, 105);
+    padding: 13px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -20px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.sticky .button-startHeader:hover {
+    background: rgb(0, 165, 93);
+}
+
+.section1 {
+    background-color: rgb(22, 82, 240);
+    color: white;
+    text-align: center;
+}
+
+.titleSection1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.textSection1 {
+    font-size: 1.125em;
+}
+
+.signup {
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+.input-signup {
+    /* width: 250px; */
+    height: 60px;
+    background: white;
+    border-radius: 7px;
+    border: 0px;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.button-signup {
+    background: rgb(5, 177, 105);
+    border-radius: 7px;
+    border: 00px solid rgb(5, 177, 105);
+    border-width: 00px 00px 00px 00px;
+    padding: 18px 25px 18px 25px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.leftSignup {
+    text-align: right;
+}
+
+.rightSignup {
+    text-align: left;
+}
+
+.button-signup:hover {
+    background: rgb(0, 165, 93);
+    border-radius: 7px;
+    border: 00px solid rgb(0, 165, 93);
+    border-width: 00px 00px 00px 00px;
+    padding: 18px 25px 18px 25px;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    margin-top: -150px;
+}
+
+th.mat-header-cell {
+    font-size: 1em;
+}
+
+.mat-cell {
+    font-size: 1.125em;
+    padding: 10px 0;
+}
+
+.acrName,
+.cryptoSupAcrTxt {
+    color: rgba(17, 51, 83, 0.6);
+    padding-left: 10px;
+}
+
+.cryptoIcon {
+    float: left;
+}
+
+.cryptoIconImg,
+.cryptoSupImg {
+    width: 50px;
+    padding-right: 15px;
+}
+
+.cryptoName {
+    padding-top: 10px;
+}
+
+.chartImg {
+    width: 100px;
+}
+
+.changeNeg {
+    color: rgb(223, 95, 103);
+}
+
+.changePos {
+    color: rgb(5, 177, 105);
+}
+
+.button-buy {
+    background: rgb(5, 177, 105);
+    border-radius: 7px;
+    border: 00px solid rgb(5, 177, 105);
+    border-width: 00px 00px 00px 00px;
+    padding: 12px 17px 12px 17px;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+tr.mat-row:hover {
+    background-color: rgba(17, 51, 83, 0.02);
+}
+
+.section3 {
+    padding-top: 50px;
+}
+
+.leftSection3 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.titleEarn {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.button-start {
+    background: rgb(22, 82, 240);
+    border-radius: 7px;
+    border: 00px solid 1px solid rgb(22, 82, 240);
+    border-width: 00px 00px 00px 00px;
+    padding: 12px 17px 12px 17px;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.rightSection3 {
+    float: right;
+    text-align: right;
+}
+
+.cryptoSup {
+    float: left;
+}
+
+.earn {
+    float: right;
+    color: rgb(5, 177, 105);
+    padding-top: 10px;
+}
+
+.cryptoSupSub {
+    float: right;
+    padding-top: 10px;
+}
+
+.section3Box {
+    height: 60px;
+    padding: 10px 20px;
+}
+
+.section3Box:hover {
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+
+.title {
+    color: rgb(15, 50, 86);
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.subTitle {
+    color: rgb(144, 161, 184);
+    font-size: 18px;
+    padding-bottom: 0px;
+}
+
+.titleSection {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section4 {
+    padding: 0 40px
+}
+
+.roundedImg {
+    width: 72px;
+    height: 72px;
+    /* margin-right: 28px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    box-shadow: rgba(218, 225, 233, 0.557) 0px 8px 16px;
+}
+
+.imgSection4 {
+    width: 50px;
+}
+
+.titleBox {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.textBox {
+    line-height: 1.6;
+    color: rgb(131, 143, 160);
+}
+
+.imgApp {
+    width: 100%;
+}
+
+.section4Rigth {
+    text-align: left;
+    padding: 0 40px;
+}
+
+.section5 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section5Img,
+.section7Img {
+    padding: 30px
+}
+
+.iconSection5,
+.iconSection7 {
+    width: 100px;
+}
+
+.section5Title {
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 47, 107);
+}
+
+.section5Text {
+    color: rgb(144, 161, 184);
+    margin: 14px 0px 23px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.section5Link {
+    color: rgb(22, 82, 240);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section6 {
+    background: rgb(22, 82, 240) none repeat scroll 0% 0%;
+    padding: 70px 40px;
+    text-align: center;
+    color: white;
+}
+
+.section6box {
+    padding: 0 30px;
+}
+
+.section6Title {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section6Text {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.section7 {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.section7Title {
+    font-size: 20px;
+    color: rgb(35, 49, 67);
+}
+
+.section8 {
+    background: url("/assets/img/earn-upsell-desktop.5db6c25bf65d7ea0c754859f289aeb99.jpg") no-repeat;
+    background-position: top right;
+    background-size: 700px;
+    background-color: rgb(233, 246, 255);
+    height: 460px;
+    padding: 50px;
+}
+
+.section8Title {
+    font-size: 32px;
+    width: 450px;
+    padding-top: 150px;
+    line-height: 1.3;
+}
+
+.section8Txt {
+    font-size: 14px;
+    width: 450px;
+    line-height: 1.6;
+    padding-top: 30px;
+}
+
+.footer {
+    padding: 50px 40px;
+}
+
+.titleFooter {
+    padding: 0 10px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.linkFooter {
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 1.75;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.logoFooter {
+    padding: 0 10px;
+    margin-top: -10px;
+    padding-bottom: 17px;
+}
+
+.contactFooter {
+    padding: 0 10px;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 1.75;
+}
+
+.section2Responsive {
+    display: none;
+}
+
+#menuCollapsed {
+    display: none;
+}
+
+.sticky {
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .08);
+    position: fixed;
+    top: 0;
+    color: rgb(38, 53, 67);
+    z-index: 100;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 900px) {
+    #menuCollapsed {
+        display: inline;
+    }
+    #menuLeft,
+    #menuRight,
+    .section2 {
+        display: none;
+    }
+    .section2Responsive {
+        display: inline;
+    }
+    .imgLogo {
+        padding-left: 0;
+        width: 120px;
+    }
+    .titleSection1,
+    .title {
+        font-size: 2em;
+        padding: 30px 10px;
+    }
+    .textSection1,
+    .subTitle {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+    .leftSignup,
+    .rightSignup {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .button-signup,
+    .input-signup {
+        width: 90%;
+        margin-left: 0;
+    }
+    .leftSection3 {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .section4 {
+        text-align: center;
+    }
+    .imgSect4 {
+        margin: auto;
+    }
+    .section6box {
+        padding-bottom: 20px;
+    }
+    .section7 {
+        padding-top: 0;
+    }
+    .section8Title,
+    .section8Txt {
+        width: 90%;
+    }
+    .section8Title {
+        padding-top: 170px;
+        font-size: 25px;
+    }
+    .footer {
+        padding: 50px 10px;
+    }
+    .logoFooter {
+        padding: 0;
+    }
+    .logocontact,
+    .linkFooter {
+        padding-bottom: 20px;
+    }
+    .material-icons {
+        font-family: 'Material Icons' !important;
+    }
+    .menuiconTop {
+        color: white;
+    }
+    .menuiconBottom {
+        color: rgb(38, 53, 67);
+    }
+    table {
+        width: 100%;
+        padding: 0;
+    }
+    .mat-header-row,
+    .button-buy,
+    .chartImg,
+    .positionTb,
+    .priceCol {
+        display: none;
+    }
+    td.mat-cell:last-of-type,
+    td.mat-footer-cell:last-of-type,
+    th.mat-header-cell:last-of-type {
+        padding-right: 0;
+    }
+    td.mat-cell:first-of-type,
+    td.mat-footer-cell:first-of-type,
+    th.mat-header-cell:first-of-type {
+        padding: 5px;
+    }
+    .acrName,
+    .cryptoName {
+        padding: 0;
+    }
+    .lastCol {
+        float: right;
+        padding-right: 20px;
+    }
+}

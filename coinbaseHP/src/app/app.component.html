@@ -1,0 +1,425 @@
+<mat-toolbar id="navbar">
+    <span><img *ngIf="logo==0" class="imgLogo" src="./assets/img/logo.png">
+        <img *ngIf="logo==1" class="imgLogo" src="./assets/img/logoW.png"></span> &nbsp;
+    <div id="menuLeft">
+        <span class="menuLink">Prices</span>
+        <span class="menuLink ">Products</span>
+        <span class="menuLink ">Company</span>
+        <span class="menuLink ">Earn crypto</span>
+        <button class="button-up">up to $130</button>
+    </div>
+    <span class="fill-remaining-space "></span>
+    <div id="menuRight">
+        <span class="menuLink ">Sign in</span>
+        <button class="button-startHeader">Get started</button>
+    </div>
+    <div id="menuCollapsed">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon *ngIf="logo==0" class="menuiconTop">menu</mat-icon> 
+                <mat-icon *ngIf="logo==1" class="menuiconBottom">menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                      <span>Menu1</span>
+                    </button>
+            <button mat-menu-item>
+                      <span>Menu2</span>
+                    </button>
+            <button mat-menu-item>
+                      <span>Menu3</span>
+                    </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+
+<div class="main">
+    <div class="section1">
+        <div class="titleSection1">
+            Buy and sell cryptocurrency
+        </div>
+        <div class="textSection1">
+            Coinbase is the easiest place to buy, sell, and manage your cryptocurrency portfolio.
+        </div>
+        <div class="signup" fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+            <div fxFlex="50% " class="leftSignup">
+                <input type="text" class="input-signup" placeholder="Email address">
+            </div>
+            <div fxFlex="50% " class="rightSignup">
+                <button class="button-signup">Get started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef># </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="cryptoIcon">
+                        <img class="cryptoIconImg" [src]="element.imageUrl" />
+                    </div>
+                    <div class="cryptoName">
+                        {{element.name}}
+                        <span class="acrName">{{element.acr}}</span>
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef>Price </th>
+                <td mat-cell *matCellDef="let element"> $ {{element.price}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="change">
+                <th mat-header-cell *matHeaderCellDef>Change </th>
+                <td mat-cell *matCellDef="let element">
+                    <span *ngIf="element.change < 0" class="changeNeg">{{element.change}} % </span>
+                    <span *ngIf="element.change > 0" class="changePos">+{{element.change}} % </span>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="chart">
+                <th mat-header-cell *matHeaderCellDef>Chart </th>
+                <td mat-cell *matCellDef="let element"> <img class="chartImg" [src]="element.chart" /> </td>
+            </ng-container>
+
+            <ng-container matColumnDef="trade">
+                <th mat-header-cell *matHeaderCellDef>Trade </th>
+                <td mat-cell *matCellDef="let element">
+                    <button class="button-buy">Buy</button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+    <div class="section2Responsive">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef># </th>
+                <td mat-cell *matCellDef="let element"><span class="positionTb">{{element.position}} </span></td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Name </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="cryptoIcon">
+                        <img class="cryptoIconImg" [src]="element.imageUrl" />
+                    </div>
+                    <div class="cryptoName">
+                        {{element.name}}<br>
+                        <span class="acrName">{{element.acr}}</span>
+                    </div>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef>Price </th>
+                <td mat-cell *matCellDef="let element"> <span class="priceCol">$ {{element.price}}</span> </td>
+            </ng-container>
+
+            <ng-container matColumnDef="change">
+                <th mat-header-cell *matHeaderCellDef>Change </th>
+                <td mat-cell *matCellDef="let element"><span class="lastCol">$ {{element.price}}</span><br>
+                    <span *ngIf="element.change < 0" class="changeNeg lastCol">{{element.change}} % </span>
+                    <span *ngIf="element.change > 0" class="changePos lastCol">+{{element.change}} % </span>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="chart">
+                <th mat-header-cell *matHeaderCellDef>Chart </th>
+                <td mat-cell *matCellDef="let element"> <img class="chartImg" [src]="element.chart" /> </td>
+            </ng-container>
+
+            <ng-container matColumnDef="trade">
+                <th mat-header-cell *matHeaderCellDef>Trade </th>
+                <td mat-cell *matCellDef="let element">
+                    <button class="button-buy">Buy</button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+
+    <div class="section3" fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+        <div fxFlex="30% " class="leftSection3">
+            <div class="titleEarn">
+                Earn up to $130 worth of crypto
+            </div>
+            <div> Discover how specific cryptocurrencies work — and get a bit of each crypto to try out for yourself.
+            </div>
+            <div>
+                <button class="button-start">Start earning</button>
+            </div>
+        </div>
+        <div fxFlex="20% " class="rightSection3"></div>
+        <div fxFlex="50% " class="rightSection3">
+            <div class="section3Box">
+                <div class="cryptoSup">
+                    <img class="cryptoSupImg" src="./assets/img/asset-logo.png " />
+                    <div class="cryptoSupSub"><span class="cryptoSupTxt">Dai</span>
+                        <span class="cryptoSupAcrTxt">DAI</span></div>
+                </div>
+                <div class="earn">
+                    Earn $20 DAI
+                </div>
+            </div>
+            <div class="section3Box">
+                <div class="cryptoSup">
+                    <img class="cryptoSupImg" src="./assets/img/asset-logo(2).png " />
+                    <div class="cryptoSupSub"><span class="cryptoSupTxt">EOS</span>
+                        <span class="cryptoSupAcrTxt">EOS</span></div>
+                </div>
+                <div class="earn">
+                    Earn $20 EOS
+                </div>
+            </div>
+            <div class="section3Box">
+                <div class="cryptoSup">
+                    <img class="cryptoSupImg" src="./assets/img/asset-logo.svg " />
+                    <div class="cryptoSupSub"><span class="cryptoSupTxt">Stellar Lumens</span>
+                        <span class="cryptoSupAcrTxt">XLM</span></div>
+                </div>
+                <div class="earn">
+                    Earn $20 DAI
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="titleSection">
+        <div class="title">
+            Create your cryptocurrency portfolio today
+        </div>
+        <div class="subTitle">
+            Coinbase has a variety of features that make it the best place to start trading
+        </div>
+    </div>
+    <div class="section4" fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+        <div fxFlex="35% ">
+            <div fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                <div fxFlex="20% " class="imgSect4">
+                    <div class="roundedImg">
+                        <img class="imgSection4" src="./assets/img/img1.png " />
+                    </div>
+                </div>
+                <div fxFlex="80% " style="padding-left: 20px;padding-bottom: 30px;">
+                    <div class="titleBox">Manage your portfolio</div>
+                    <div class="textBox">Buy and sell popular digital currencies, keep track of them in the one place.</div>
+                </div>
+            </div>
+            <div fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                <div fxFlex="20% " class="imgSect4">
+                    <div class="roundedImg">
+                        <img class="imgSection4" src="./assets/img/img2.png " />
+                    </div>
+                </div>
+                <div fxFlex="80% " style="padding-left: 20px;padding-bottom: 30px;">
+                    <div class="titleBox">Recurring buys</div>
+                    <div class="textBox">Invest in cryptocurrency slowly over time by scheduling buys daily, weekly, or monthly.</div>
+                </div>
+            </div>
+            <div fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                <div fxFlex="20% " class="imgSect4">
+                    <div class="roundedImg">
+                        <img class="imgSection4" src="./assets/img/img3.png " />
+                    </div>
+                </div>
+                <div fxFlex="80% " style="padding-left: 20px;padding-bottom: 30px;">
+                    <div class="titleBox">Vault protection</div>
+                    <div class="textBox">For added security, store your funds in a vault with time delayed withdrawals.</div>
+                </div>
+            </div>
+            <div fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+                <div fxFlex="20% " class="imgSect4">
+                    <div class="roundedImg">
+                        <img class="imgSection4" src="./assets/img/img4.png " />
+                    </div>
+                </div>
+                <div fxFlex="80% " style="padding-left: 20px;padding-bottom: 30px;">
+                    <div class="titleBox">Mobile apps</div>
+                    <div class="textBox">Stay on top of the markets with the Coinbase app for Android or iOS.</div>
+                </div>
+            </div>
+        </div>
+        <div fxFlex="65% " class="section4Rigth">
+            <img class="imgApp" src="./assets/img/coinbase-app.51b8f3dbe406092d16845f3e74870061.jpg " />
+        </div>
+    </div>
+
+    <div class="titleSection">
+        <div class="title">
+            The most trusted cryptocurrency platform
+        </div>
+        <div class="subTitle">
+            Here are a few reasons why you should choose Coinbase </div>
+    </div>
+
+    <div class="section5" fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+        <div fxFlex="33% " class="section5box">
+            <div class="section5Img">
+                <img class="iconSection5" src="./assets/img/img5.png " />
+            </div>
+            <div class="section5Title">Secure storage
+            </div>
+            <div class="section5Text">We store the vast majority of the digital assets in secure offline storage.
+            </div>
+            <div class="section5Link">Learn more >
+            </div>
+        </div>
+        <div fxFlex="33% " class="section5box">
+            <div class="section5Img">
+                <img class="iconSection5" src="./assets/img/img6.png " />
+            </div>
+            <div class="section5Title">Protected by insurance
+            </div>
+            <div class="section5Text">Cryptocurrency stored on our servers is covered by our insurance policy.
+            </div>
+            <div class="section5Link">Learn more >
+            </div>
+        </div>
+        <div fxFlex="33% " class="section5box">
+            <div class="section5Img">
+                <img class="iconSection5" src="./assets/img/img7.png " />
+            </div>
+            <div class="section5Title">Industry best practices
+            </div>
+            <div class="section5Text">Coinbase supports a variety of the most popular digital currencies.
+            </div>
+            <div class="section5Link">Learn more >
+            </div>
+        </div>
+    </div>
+
+    <div class="section6" fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+        <div fxFlex="33% " class="section6box">
+            <div class="section6Title">$150B+
+            </div>
+            <div class="section6Text">Cryptocurrency exchanged
+            </div>
+
+        </div>
+        <div fxFlex="33% " class="section6box">
+
+            <div class="section6Title">102
+            </div>
+            <div class="section6Text">Countries supported
+            </div>
+
+        </div>
+        <div fxFlex="33% " class="section6box">
+
+            <div class="section6Title">30M+
+            </div>
+            <div class="section6Text">Customers served
+            </div>
+
+        </div>
+    </div>
+
+    <div class="titleSection">
+        <div class="title">
+            Get started in a few minutes
+        </div>
+        <div class="subTitle">
+            Coinbase supports a variety of the most popular digital currencies.</div>
+    </div>
+
+    <div class="section7" fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+        <div fxFlex="30% " class="section7box">
+            <div class="section7Img">
+                <img class="iconSection7" src="./assets/img/img8.png " />
+            </div>
+            <div class="section7Title">Create an account
+            </div>
+        </div>
+
+        <div fxFlex="30% " class="section6box">
+            <div class="section7Img">
+                <img class="iconSection7" src="./assets/img/img9.png " />
+            </div>
+            <div class="section7Title">Link your bank account
+            </div>
+        </div>
+
+        <div fxFlex="30% " class="section7box">
+            <div class="section7Img">
+                <img class="iconSection7" src="./assets/img/img10.png " />
+            </div>
+            <div class="section7Title">Start buying & selling
+            </div>
+        </div>
+    </div>
+
+    <div class="section8">
+        <div class="section8Title">
+            Earn up to $130 worth of crypto
+        </div>
+        <div class="section8Txt">
+            Discover how specific cryptocurrencies work — and get a bit of each crypto to try out for yourself.
+        </div>
+        <div class="section8btn">
+            <button class="button-start">Start earning</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer" fxLayout="row " fxLayout.lt-sm="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
+    <div fxFlex="20% " class="logocontact">
+        <div class="logoFooter">
+            <img class="iconSection7" src="./assets/img/logoW.png " />
+        </div>
+        <div class="contactFooter">
+            +1 (888) 908-7930 <br>support.coinbase.com <br><br>© 2019 Coinbase
+        </div>
+    </div>
+    <div fxFlex="20% " class="">
+        <div class="titleFooter">Products
+        </div>
+        <div class="linkFooter">Coinbase<br>Commerce<br>Custody<br>Earn<br> Pro
+            <br> USD Coin<br> Wallet
+            <br> Ventures
+        </div>
+    </div>
+    <div fxFlex="20% " class="">
+        <div class="titleFooter">Learn
+        </div>
+        <div class="linkFooter">
+            Buy Bitcoin<br> Buy Bitcoin Cash<br> Buy Ethereum<br> Buy Litecoin<br> Buy XRP<br> Supported countries<br> Status
+            <br> Taxes
+            <br>
+        </div>
+    </div>
+    <div fxFlex="20% " class="">
+        <div class="titleFooter">Company
+        </div>
+        <div class="linkFooter">
+            About<br> Affiliates
+            <br> Careers
+            <br> Partners
+            <br> Press
+            <br> Legal & Privacy<br> Support
+            <br>
+        </div>
+    </div>
+    <div fxFlex="20% " class="">
+        <div class="titleFooter">Social
+        </div>
+        <div class="linkFooter">Blog<br> Twitter
+            <br> Facebook
+            <br>
+        </div>
+    </div>
+
+
+</div>
