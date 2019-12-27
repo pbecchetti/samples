@@ -1,0 +1,94 @@
+<mat-toolbar id="navbar">
+    <span><img class="iconHeader" id="logo1" src="./assets/img/logo.png "></span> &nbsp;
+    <span><img class="iconHeader" id="logo2" src="./assets/img/logoB.png "></span> &nbsp;
+    <div id="menuLeft">
+        <span class="menuLink">How It Works</span>
+        <span class="menuLink ">Pricing</span>
+        <span class="menuLink ">Travel Inspiration</span>
+        <span class="menuLink ">Sign In</span>
+    </div>
+    <span class="fill-remaining-space space1"></span>
+    <div id="menuRight">
+
+        <span class="menuLink underline"><mat-icon id="phoneIcon">phone</mat-icon> Schedule a free trip consultation</span>
+        <button id="headerBtn" class="btnSignup">Plan My Trip</button>
+    </div>
+    <!-- <div id="menuCollapsed"> -->
+    <div id="menuCOllRight">
+        <button mat-icon-button [matMenuTriggerFor]="menuHeader" aria-label="menu">
+            <mat-icon id="menuClick">menu</mat-icon></button>
+        <span><img class="iconHeader2" id="logo1" src="./assets/img/logo.png "></span> &nbsp;
+    </div>
+    <span class="fill-remaining-space "></span>
+    <div id="menuRightSmall">
+
+        <span class="menuLink underline"><mat-icon id="phoneIcon">phone</mat-icon> Schedule a free trip consultation</span>
+        <button id="headerBtn" class="btnSignup">Plan My Trip</button>
+    </div>
+    <mat-menu #menuHeader="matMenu" class="menuExpand">
+        <span><mat-icon id="closeIcon">close</mat-icon> </span>
+        <button mat-menu-item>
+                  <span class="menuExpandLink">How It Works</span>
+        </button>
+        <button mat-menu-item>
+          <span class="menuExpandLink">Pricing</span>
+          </button>
+        <button mat-menu-item>
+                  <span class="menuExpandLink">Travel inspiration</span>
+                </button>
+        <button mat-menu-item>
+                  <span class="menuExpandLink">Sign in</span>
+          </button>
+        <button mat-menu-item>
+                  <span class="menuExpandLink">For agents</span>
+          </button>
+        <button mat-menu-item>
+                  <span class="menuExpandLink">Sign in</span>
+          </button>
+        <button mat-menu-item>
+                <span class="menuLink menuLink2"><mat-icon id="phoneIcon">phone</mat-icon> Schedule a free trip consultation</span>
+        </button>
+        <button id="headerBtn" class="btnSignup">Plan My Trip</button>
+    </mat-menu>
+    <!-- </div> -->
+</mat-toolbar>
+
+
+<div class="main">
+    <app-homepage></app-homepage>
+</div>
+<!-- 
+<div id="sectionFooter">
+  <div class="footer" fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.7% " fxLayoutAlign="center ">
+      <div fxFlex="40% ">
+          <img class="iconFooter" src="./assets/img/better-favicon-fill.png ">
+          <p class="footerTxt">
+              Better Mortgage Corporation is a direct lender dedicated to providing a fast, transparent digital mortgage experience backed by superior customer support.
+          </p>
+          <img class="iconSocial" src="./assets/img/tt.png ">
+          <img class="iconSocial" src="./assets/img/fb.png ">
+      </div>
+      <div fxFlex="20% " class="links">
+          <div class="titleFooter">Contact us</div>
+          <div class="linkFooter">
+              <a>hello@better.com</a><br> <a>415-523-8837</a>
+              <br> <a>FAQ</a>
+              <br> <a>Resources</a>
+          </div>
+      </div>
+      <div fxFlex="20% " class="links">
+          <div class="titleFooter">Company</div>
+          <div class="linkFooter"> <a>About Us</a><br> <a>Media</a>
+              <br> <a>Careers</a>
+          </div>
+      </div>
+      <div fxFlex="20% " class="links">
+          <div class="titleFooter">Legal</div>
+          <div class="linkFooter"><a>NMLS Consumer Access</a><br>
+              <a>Privacy Policy</a><br>
+              <a>Terms of Use</a><br>
+              <a>Disclosures & Licensing</a><br>
+          </div>
+      </div>
+
+  </div> -->

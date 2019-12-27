@@ -1,0 +1,141 @@
+#navbar {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    height: 80px;
+    z-index: 100;
+}
+
+.iconHeader {
+    width: 80px;
+    padding-right: 30px;
+    margin-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.menuLink {
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.menuLink:hover {
+    color: #ff5e5b;
+    cursor: pointer;
+}
+
+#phoneIcon {
+    width: 15px;
+    font-size: 16px;
+}
+
+.btnSignup {
+    background: #FF5A57;
+    border-radius: 4px;
+    border-width: 00px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnSignup:hover {
+    background: #ff8684;
+}
+
+#headerBtn {
+    padding: 0 20px;
+    line-height: 37px;
+}
+
+.iconHeader2 {
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+}
+
+#menuCOllRight,
+#menuRightSmall {
+    display: none;
+}
+
+#menuLeft,
+#menuRight,
+.iconHeader,
+.space1 {
+    display: block;
+}
+
+#logo1,
+#logo1b {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#logo2,
+#logo2b {
+    display: none;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    #menuCOllRight,
+    #menuRightSmall {
+        display: block;
+    }
+    #menuRightSmall {
+        padding-top: 15px;
+    }
+    #menuLeft,
+    #menuRight,
+    .iconHeader,
+    .space1 {
+        display: none !important;
+    }
+     ::ng-deep .menuExpand {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: none !important;
+        max-height: none !important;
+        height: 100%;
+    }
+    #closeIcon {
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    #headerBtn {
+        margin-left: 15px;
+        ;
+    }
+    .mat-menu-item .mat-icon-no-color {
+        color: #ff5e5b;
+        cursor: pointer;
+    }
+    .menuLink2 {
+        color: #ff5e5b;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .menuExpandLink {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* #menuCollapsed {
+        display: block;
+    }
+    #menuLeft,
+    #menuRight,
+    .iconHeader {
+        display: none;
+    } */
+}

@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+font-face {
+    font-family: 'Avenir-M';
+    src: url(/assets/font/AvenirLTStd-Medium.otf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir-H';
+    src: url(/assets/font/AvenirHeavy.ttf) format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Avenir-M', sans-serif;
+    font-size: 50px;
+    color: #122842;
+}

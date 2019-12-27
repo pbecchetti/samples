@@ -1,0 +1,890 @@
+    font-face {
+        font-family: 'Avenir-M';
+        src: url(/assets/font/AvenirLTStd-Medium.otf) format("truetype");
+    }
+    
+    .top {
+        background: transparent;
+        background-image: none;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(5, 27, 74, .65)), to(rgba(5, 27, 74, .8)));
+        background: linear-gradient(0deg, rgba(5, 27, 74, .65), rgba(5, 27, 74, .8));
+        display: table-cell;
+        margin: 0;
+        padding: 0 10px;
+        text-align: center;
+        vertical-align: middle;
+        height: 600px;
+        width: 2000px;
+    }
+    
+    #top {
+        background: url('/assets/img/new-home-banner-9e8cdac176283b9fae391157dbabcc6b.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 600px;
+        max-height: 750px;
+    }
+    
+    .top h1 {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 75px;
+        color: #fff;
+        text-align: center;
+        margin: 140px 0 28px;
+    }
+    
+    .top h1 span {
+        display: block;
+    }
+    
+    .top h2 {
+        font-size: 18px;
+        font-family: 'Avenir-M', sans-serif;
+        margin: 28px 0;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 18px #000f36;
+    }
+    
+    .btnSignup {
+        background: #FF5A57;
+        border-radius: 4px;
+        border-width: 00px;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btnSignup:hover {
+        background: #ff8684;
+    }
+    
+    #topBtn {
+        line-height: 37px;
+        width: 280px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 5px 30px;
+        text-transform: uppercase;
+        transition: .15s;
+        cursor: pointer;
+    }
+    
+    .featuredTitle {
+        text-transform: uppercase;
+        margin-top: 50px;
+        letter-spacing: 2.57px;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .logoF {
+        vertical-align: middle;
+    }
+    
+    .logoSlider {
+        padding: 0 0 15px 0;
+    }
+    
+    .nextSection {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        background-color: #ff5a57;
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        font-size: 34px;
+        cursor: pointer;
+        z-index: 11;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -13px;
+    }
+    
+    #arrow {
+        height: 32px;
+        width: 35px;
+        font-size: 35px;
+    }
+    
+    #howItWorks {
+        padding: 90px 130px 70px;
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f8fc;
+        border-radius: 3px;
+        text-align: left;
+        margin: 0 10px;
+        padding: 50px 36px;
+        align-items: center;
+    }
+    
+    .cardImg {
+        width: 100%;
+        text-align: center;
+        min-height: 420px;
+    }
+    
+    .imgWork {
+        min-width: 170px;
+        width: 93%;
+        max-width: 300px;
+    }
+    
+    .cardContent {
+        max-width: 310px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .subTitle {
+        text-transform: uppercase;
+        color: #ff5e5b;
+        letter-spacing: .04em;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .subTiltle2 {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 6px 0 5px;
+    }
+    
+    #pricing {
+        background: #f4f4f5;
+        background-size: auto;
+        background-size: cover;
+        padding: 90px 130px 70px;
+    }
+    
+    .sectionTitle {
+        font-size: 28px;
+        color: #1e2a40;
+        letter-spacing: 0;
+        line-height: 36px;
+        margin: 0;
+        text-align: center;
+        margin: 0 0 50px;
+    }
+    
+    .sectionDescription {
+        opacity: .9;
+        font-family: Avenir-Book, sans-serif;
+        font-size: 16px;
+        line-height: 160%;
+        color: #1e2a40;
+        padding-bottom: 0;
+        margin-bottom: 28px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    #pricing .sectionDescription a {
+        text-decoration: underline;
+        color: #1e2a40;
+    }
+    
+    .cardPricing {
+        padding: 30px 0;
+        text-align: center;
+        min-height: 650px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 3px;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(229, 232, 237, 0)), color-stop(12%, rgba(229, 232, 237, .2)), to(rgba(229, 232, 237, 0))), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+        background-image: linear-gradient(0deg, rgba(229, 232, 237, 0), rgba(229, 232, 237, .2) 12%, rgba(229, 232, 237, 0)), linear-gradient(#fff, #fff);
+        box-shadow: 0 4px 8px 0 rgba(3, 27, 78, .1);
+        border: 1px solid rgba(3, 27, 78, .1);
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .headPricing {
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #pricing .title {
+        font-family: Avenir-Heavy, sans-serif;
+        font-size: 30px;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+        color: #1e2a40;
+    }
+    
+    .headerTip {
+        font-size: 14px;
+        color: rgba(18, 40, 66, .8);
+        line-height: 20px;
+        padding: 7px 0;
+    }
+    
+    .costBox {
+        display: flex;
+        width: 100%;
+        min-height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cost {
+        vertical-align: middle;
+        text-align: center;
+        line-height: 1;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #1e2a40;
+    }
+    
+    .text {
+        font-size: 40px;
+    }
+    
+    .text sup {
+        font-size: 20px;
+        position: relative;
+        top: -13px;
+    }
+    
+    .cost .sub-title {
+        font-size: 14px;
+        line-height: 1.43;
+        text-align: center;
+        color: rgba(18, 40, 66, .8);
+        display: block;
+    }
+    
+    #pricingBtn {
+        padding: 5px 30px;
+        line-height: 37px;
+        width: 70%;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+        cursor: pointer;
+    }
+    
+    #itineraryBtn {
+        padding: 5px 30px;
+        line-height: 37px;
+        width: 100%;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+        cursor: pointer;
+    }
+    
+    .label-popular span {
+        color: #fff;
+        background-color: #ff5a57;
+        position: absolute;
+        top: 19px;
+        right: -68px;
+        padding: 0 5px;
+        width: 205px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        font-family: Avenir-Black, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        font-weight: 900;
+        line-height: 30px;
+    }
+    
+    .label-popular {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+    }
+    
+    .btnBox {
+        padding: 0 32px 0 31px;
+    }
+    
+    .descPricing {
+        margin-top: 1.5em;
+    }
+    
+    .descItems {
+        list-style: none;
+        padding: 0 30px 0 56px;
+        margin: 0;
+    }
+    
+    .descItem,
+    .descItemplus {
+        text-align: left;
+        font-family: Avenir-Roman, sans-serif;
+        font-size: 14px;
+        color: rgba(18, 40, 66, .8);
+        position: relative;
+        line-height: 20px;
+        padding: 7px 0;
+    }
+    
+    .descItem::before {
+        display: inline-block;
+        content: '';
+        width: 3px;
+        height: 9px;
+        border: solid #000;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+        margin-right: 10px;
+    }
+    
+    .titlePricingDesc {
+        color: #ff5a57;
+        padding: 15px 0;
+        font-size: 30px;
+        line-height: 1;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .descItemplus::before {
+        content: "\002B";
+        margin-right: 10px;
+        color: #ff5a57;
+    }
+    
+    .infoIcon {
+        position: relative;
+        top: 5px;
+    }
+    
+    #expertTeam {
+        padding: 90px 50px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .expertContainer {
+        width: 100%;
+        justify-content: center;
+        align-items: baseline;
+    }
+    
+    .cardExpert {
+        padding: 30px 80px;
+        justify-content: center;
+        text-align: left;
+        background-color: #f5f8fc;
+        margin: auto;
+        width: 580px !important;
+        max-width: 580px !important;
+    }
+    
+    .titleExpertCard {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .teamContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 380px;
+    }
+    
+    .teamMember {
+        width: 180px;
+        text-align: left;
+        margin: 0 3px 10px;
+    }
+    
+    .imgMember {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .nameMember {
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .roleMember,
+    .companyMember {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .memberPic {
+        width: 180px;
+        height: 120px;
+    }
+    
+    .linkMeet {
+        text-decoration: underline;
+        text-align: left;
+        color: #122842;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .arrlink {
+        font-size: 14px;
+        color: #122842;
+    }
+    
+    .planning {
+        text-align: center;
+        background-color: #122842;
+        padding: 90px 130px;
+    }
+    
+    .titlePlanning {
+        color: #fff;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .introPlanning {
+        color: #fff;
+        font-size: 16px;
+        line-height: 160%;
+        margin: 20px 0 30px;
+    }
+    
+    .planningContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cardPlanning {
+        max-width: 380px;
+        padding: 27px 30px 27px 36px;
+        background-color: #fff;
+        text-align: left;
+        border-radius: 3px;
+        margin: 0 10px;
+    }
+    
+    .titlePlanningCard {
+        margin: 5px 0;
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .reasonTxt {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .inspiration {
+        text-align: center;
+        padding: 90px 130px;
+        background-color: #f5f8fc;
+    }
+    
+    .sectionInspiration {
+        justify-content: space-evenly;
+        /* display: flex; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /* .inspirationImgs {
+    flex-basis: calc(33% - 20px);
+    margin: 10px;
+} */
+    
+    .inspiPic {
+        width: 180px;
+        height: 240px;
+        border-radius: 10px;
+    }
+    
+    .inspirationImg {
+        padding: 10px 35px;
+        float: left;
+    }
+    /* .row1,
+.row2 {
+    float: left;
+} */
+    
+    .rowImg {
+        margin: auto;
+    }
+    
+    .imagescenter {
+        /* width: fit-content; */
+        margin: auto;
+        cursor: pointer;
+    }
+    
+    .txtImgInspi {
+        color: white;
+        margin-top: -60px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    #testimonial {
+        background-color: #f5f8fc;
+    }
+    
+    .main-test {
+        padding: 80px 130px 30px;
+        text-align: center;
+    }
+    
+    .testContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .testSlider {
+        position: relative;
+        display: block;
+    }
+    
+    .testCTA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid rgba(18, 40, 66, .2);
+        width: 100%;
+        padding: 0.5em;
+        margin: 20px 0;
+    }
+    
+    .testTitle {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .testText {
+        font-size: 14px;
+    }
+    
+    .sliderList {
+        height: 540px;
+    }
+    
+    .sliderTrack {
+        /* transform: translate3d(-3015px, 0px, 0px); */
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .sliderContainder {
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+    
+    .carousel {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+        overflow: hidden;
+        flex-direction: row;
+    }
+    
+    .leftSlide {
+        max-width: 360px;
+        margin-right: 20px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    
+    .rightSlide {
+        max-width: 735px;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    
+    .imgTitleSlide {
+        display: flex;
+    }
+    
+    .picProfileSlider {
+        width: 110px;
+        height: 110px;
+        min-width: 0;
+    }
+    
+    .picProfile {
+        /* position: absolute;
+    top: 0px;
+    left: 0px; */
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        object-position: 50% 50%;
+        /* opacity: 0; */
+        transition-delay: 500ms;
+        font-family: "object-fit: cover; object-position: 50% 50%";
+    }
+    
+    .picRate {
+        float: left;
+    }
+    
+    .ratingSlider {
+        margin-left: 20px;
+        width: 240px;
+    }
+    
+    .ratingTitle {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .descriptionItinerary {
+        line-height: 22px;
+        padding: 23px 10px 23px 15px;
+        background-color: #fff;
+        margin: 25px 0;
+        border-radius: 3px;
+        font-size: 14px;
+        text-align: left;
+        box-shadow: -5px 5px 14px rgba(30, 30, 30, .1);
+    }
+    
+    .statContainer {
+        margin-bottom: 27px;
+        text-align: left;
+        font-size: 14px;
+    }
+    
+    .stat {
+        display: flex;
+        margin-bottom: 5px;
+        align-items: baseline;
+    }
+    
+    .statContainer .stat .label {
+        min-width: 100px;
+        max-width: 100px;
+        margin-right: 10px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+    
+    .statContainer .stat .value {
+        line-height: 21px;
+    }
+    
+    .btnItinerary {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .25) !important;
+        border: 1px solid #122842 !important;
+        color: #122842;
+        cursor: pointer;
+        font-size: 14px;
+        display: inline-block;
+        padding: 15px 30px;
+        -webkit-transition: .15s;
+        transition: .15s;
+        border-radius: 4px;
+        border: none;
+        box-shadow: none;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .btnItineraryCon {
+        float: left;
+    }
+    
+    .mapContainer {
+        margin-bottom: 15px;
+        box-shadow: -5px 5px 14px rgba(30, 30, 30, .1);
+    }
+    
+    .mapPic {
+        width: 100%;
+        min-width: 450px;
+    }
+    
+    .sectionInspirationSmall {
+        display: none;
+    }
+    
+    .sectionInspiration {
+        display: block;
+    }
+    
+    @media screen and (max-width: 1500px) {
+        .row1,
+        .row2 {
+            float: left;
+        }
+        .clear {
+            clear: both;
+        }
+    }
+    
+    @media screen and (max-width: 1400px) {
+        .cardExpert {
+            width: 460px !important;
+            max-width: 460px !important;
+            padding: 30px 40px;
+        }
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .inspiration {
+            padding: 90px 40px;
+        }
+        .inspirationImg {
+            padding: 10px 5px;
+            margin-bottom: 20px;
+        }
+        .smallclear {
+            display: none;
+        }
+        .cardImg {
+            min-height: 300px;
+        }
+    }
+    
+    @media screen and (max-width: 959px) {
+        #cardEMpty {
+            display: none
+        }
+        .cardPlanning {
+            margin: auto;
+        }
+    }
+    
+    @media screen and (min-width: 1280px) {
+        .imagescenter {
+            display: inline;
+        }
+        .rowImg {
+            max-width: 504px !important;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .inspirationImg {
+            padding: 10px;
+        }
+        .inspiPic {
+            width: 148px;
+            height: 220px;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .row1,
+        .row2 {
+            float: left
+        }
+        .clear {
+            display: none;
+        }
+        .smallRow1,
+        .smallRow2,
+        .smallRow3 {
+            float: left;
+        }
+        .smallclear {
+            clear: both;
+        }
+        .sectionInspirationSmall {
+            display: block;
+            height: 700px;
+        }
+        .sectionInspiration {
+            display: none;
+        }
+        .imagescenter {
+            display: inline !important;
+        }
+        .breakLine {
+            clear: both;
+        }
+        .imgsContainerSmall {
+            width: 380px;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .inspiration {
+            padding: 90px 1px;
+        }
+        .top h1 {
+            font-size: 30px;
+        }
+        .top h2 {
+            font-size: 16px;
+        }
+        #howItWorks,
+        #pricing,
+        .planning,
+        .main-test {
+            padding: 50px 10px;
+        }
+        .cardImg {
+            min-height: 300px;
+        }
+        .imgTitleSlide,
+        .descriptionItinerary,
+        .statContainer {
+            max-width: 330px;
+        }
+        .cardExpert {
+            max-width: 300px !important
+        }
+        .leftSlide {
+            margin: unset;
+        }
+        .mapPic {
+            min-width: 0;
+        }
+        .memberPic {
+            width: 100px;
+            height: 65px;
+        }
+        .teamMember {
+            width: 110px;
+        }
+        .teamContainer {
+            width: 250px;
+        }
+    }
