@@ -1,115 +1,151 @@
-<div class="content" role="main" (scroll)="onWindowScroll($event);">
-    <mat-toolbar id="navbar">
-        <span><img class="imgLogo" src="./assets/img/logo-small.svg "></span> &nbsp;
-        <span style="font-size: 20px; ">Teambit</span>
-        <span class="fill-remaining-space "></span>
+<div class="content" role="main" (scroll)="onWindowScroll($event)">
+  <mat-toolbar id="navbar">
+    <!-- <span><img class="imgLogo" src="./assets/img/logo-small.svg "></span> &nbsp; -->
+    <span style="font-size: 20px">TeamBitCOPY</span>
 
-        <div id="menuMain">
-            <span class="menuRight dropdownSolution" [matMenuTriggerFor]="menu">Solutions</span>
-            <span class="menuRight moreSol"></span>
-            <span class="menuRight ">Pricing</span>
-            <span class="menuRight ">Blog</span>
-            <span class="menuRight ">Sign in</span>
-            <span class="menuRight ">Sign up</span>
-        </div>
-        <mat-menu #menu="matMenu">
-            <button mat-menu-item>Feedback</button>
-            <button mat-menu-item>Surveys</button>
-            <button mat-menu-item>Reviews</button>
-        </mat-menu>
-        <div id="menuCollapsed">
-            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                    <mat-icon>menu</mat-icon> </button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item>
-                          <span>Feedback</span>
-                        </button>
-                <button mat-menu-item disabled>
-                          <span>Surveys</span>
-                        </button>
-                <button mat-menu-item>
-                          <span>Reviews</span>
-                        </button>
-                <button mat-menu-item>
-                                <span>Praise</span>
-                              </button>
-                <button mat-menu-item>
-                                    <span>Pricing</span>
-                                  </button>
-                <button mat-menu-item>
-                                        <span>Blog</span>
-                                      </button>
-                <button mat-menu-item>
-                                            <span>Sign in</span>
-                                          </button>
-            </mat-menu>
-        </div>
+    <span class="fill-remaining-space"></span>
 
-
-    </mat-toolbar>
-    <hr class="menuBottom ">
-
-    <app-homepage></app-homepage>
-
-    <div class="footer ">
-        <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
-            <div class="footerTxt" fxFlex="30% ">
-                <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center " style="padding-bottom: 20px;">
-                    <div fxFlex="20% ">
-                        <img class="imgLogoFooter " src="./assets/img/logo-small.svg ">
-                    </div>
-                    <div fxFlex="80% ">
-                        Teambit helps teams create high performing cultures by making feedback a daily habit.
-                    </div>
-                </div>
-            </div>
-            <div fxFlex="70% " class="footerLinks ">
-                <div fxLayout="row " fxLayout.lt-md="column " fxLayoutWrap fxLayoutGap="0.5% " fxLayoutAlign="center ">
-                    <div fxFlex="33% " class="footerColumn ">
-                        <div class="leftFooter ">
-                            Product<br><br>
-                            <p class="SubFooter ">
-                                Feedback<br> <br>Survey
-                                <br> <br>Reviews
-                            </p>
-                        </div>
-                        <div class="rightFooter ">About <br><br>
-                            <p class="SubFooter ">
-                                About<br> <br>Terms
-                                <br><br> Help Center
-                            </p>
-                        </div>
-                    </div>
-                    <div fxFlex="33% " class="footerColumn " style="padding-bottom: 20px;">
-                        <div class="leftFooter ">
-                            Connect<br><br>
-                            <p class="SubFooter ">
-                                Contact Us<br> <br>Twitter
-                                <br> <br>Facebook
-                            </p>
-                        </div>
-                        <div class="rightFooter ">Labs <br><br>
-                            <p class="SubFooter ">
-                                Manager<br> <br>Checklist
-                                <br><br> Help Center
-                            </p>
-                        </div>
-                    </div>
-                    <div fxFlex="33% " class="footerColumn " style="padding-bottom: 20px;">
-                        <div class="leftFooter ">
-                            From the blog<br><br>
-                            <p class="SubFooter ">
-                                How to change your company culture<br> <br>How teams can be more productive
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="menuMain">
+      <span class="menuRight dropdownSolution" [matMenuTriggerFor]="menu"
+        >Solutions</span
+      >
+      <span class="menuRight moreSol"></span>
+      <span class="menuRight">Pricing</span>
+      <span class="menuRight">Blog</span>
+      <span class="menuRight">Sign in</span>
+      <span class="menuRight">Sign up</span>
     </div>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Feedback</button>
+      <button mat-menu-item>Surveys</button>
+      <button mat-menu-item>Reviews</button>
+    </mat-menu>
+    <div id="menuCollapsed">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <span>Feedback</span>
+        </button>
+        <button mat-menu-item disabled>
+          <span>Surveys</span>
+        </button>
+        <button mat-menu-item>
+          <span>Reviews</span>
+        </button>
+        <button mat-menu-item>
+          <span>Praise</span>
+        </button>
+        <button mat-menu-item>
+          <span>Pricing</span>
+        </button>
+        <button mat-menu-item>
+          <span>Blog</span>
+        </button>
+        <button mat-menu-item>
+          <span>Sign in</span>
+        </button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  <hr class="menuBottom" />
+
+  <span class="warning">
+    WARNING! THIS IS NOT THE ACTUAL WEBSITE BUT A SIMULATION OF IT!</span
+  >
+  <br /><span class="warning">
+    THE ONLY PURPOSE OF THIS IS TO SHOW MY SKILLS, NOTHING TO SELL HERE!</span
+  >
+  <app-homepage></app-homepage>
+
+  <div class="footer">
+    <div
+      fxLayout="row "
+      fxLayout.lt-md="column "
+      fxLayoutWrap
+      fxLayoutGap="0.5% "
+      fxLayoutAlign="center "
+    >
+      <div class="footerTxt" fxFlex="30% ">
+        <div
+          fxLayout="row "
+          fxLayout.lt-md="column "
+          fxLayoutWrap
+          fxLayoutGap="0.5% "
+          fxLayoutAlign="center "
+          style="padding-bottom: 20px"
+        >
+          <div fxFlex="20% ">
+            <!-- <img class="imgLogoFooter" src="./assets/img/logo-small.svg " /> -->
+          </div>
+          <div fxFlex="80% ">
+            Teambit helps teams create high performing cultures by making
+            feedback a daily habit.
+          </div>
+        </div>
+      </div>
+      <div fxFlex="70% " class="footerLinks">
+        <div
+          fxLayout="row "
+          fxLayout.lt-md="column "
+          fxLayoutWrap
+          fxLayoutGap="0.5% "
+          fxLayoutAlign="center "
+        >
+          <div fxFlex="33% " class="footerColumn">
+            <div class="leftFooter">
+              Product<br /><br />
+              <p class="SubFooter">
+                Feedback<br />
+                <br />Survey <br />
+                <br />Reviews
+              </p>
+            </div>
+            <div class="rightFooter">
+              About <br /><br />
+              <p class="SubFooter">
+                About<br />
+                <br />Terms <br /><br />
+                Help Center
+              </p>
+            </div>
+          </div>
+          <div fxFlex="33% " class="footerColumn" style="padding-bottom: 20px">
+            <div class="leftFooter">
+              Connect<br /><br />
+              <p class="SubFooter">
+                Contact Us<br />
+                <br />Twitter <br />
+                <br />Facebook
+              </p>
+            </div>
+            <div class="rightFooter">
+              Labs <br /><br />
+              <p class="SubFooter">
+                Manager<br />
+                <br />Checklist <br /><br />
+                Help Center
+              </p>
+            </div>
+          </div>
+          <div fxFlex="33% " class="footerColumn" style="padding-bottom: 20px">
+            <div class="leftFooter">
+              From the blog<br /><br />
+              <p class="SubFooter">
+                How to change your company culture<br />
+                <br />How teams can be more productive
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-
 
 <router-outlet></router-outlet>
