@@ -16,6 +16,13 @@
         height: 600px;
         width: 2000px;
     }
+    .warning{
+        margin-top: 70px;
+        margin-left: 70px;
+        font-size: 23px;
+        color: red;
+        background-color: yellow;
+    }
     
     #top {
         background: url('/assets/img/new-home-banner-9e8cdac176283b9fae391157dbabcc6b.jpg');
